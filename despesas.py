@@ -1,5 +1,5 @@
 def despesas ():
-    continua = []
+    continua = "S"
     lista = []
 
 
@@ -7,10 +7,10 @@ def despesas ():
         with open ("despesa.txt", "a") as arquivo:
             arquivo.write(lista)
             arquivo.write("\n")
-            arquivo.close
+           
 
 
-    while (continua != "N"):
+    while (continua == "S"):
         temp = []
         temp.append(input("informe o mês:  ").upper())
         temp.append(input("informe os valor dos despesas R$: "))
